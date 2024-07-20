@@ -29,6 +29,7 @@ class SuggestedAccountAdaptor(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.fragment_suggested_account,parent,false)
+        return ViewHolder(view)
     }
 
     override fun getItemCount(): Int {
@@ -51,7 +52,6 @@ class SuggestedAccountAdaptor(
     }
 
     interface Clicklisterner{
-
         fun onFollowClicked()
 
     }
